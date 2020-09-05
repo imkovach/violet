@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/font-glyphicons.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Ковач Иван. Эксперт по автоматизации бизнеса на платформе "1С:Предприятие"</title>
+
+</head>
+
+<body>
+
+<header class="header">
+
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo" src="img/logo.png" alt="">
+            iKovach.ru
+        </a>
+    </nav>
+
+</header>
+
+<section class="contact-message">
+
+    <div class="container">
+        <div class="row d-flex align-items-center">
+            <div class="col-md-4">
+                <img class="img-fluid overlay contact-me-photo rounded-circle p-2 mx-auto m-1" src="img/ivan.png"
+                     alt="Ivan Kovach">
+            </div>
+            <div class="col-md-8 text-justify mt-2 h5">
+                <div>
+                    <p class="text-center text-md-left">Добрый день!</p>
+                    <p>Меня зовут Иван Ковач. Я - эксперт по автоматизации бизнеса на платформе "1С:Предприятие".</p>
+                    <p>Скорее всего, Вы попали сюда потому, что на моем сайте не оказалось материалов, на которые Вы
+                        пытались перейти. Несмотря на это досадное обстоятельство, я готов ответить на вопрос, ответ на
+                        который Вы искали.
+                    </p>
+                    <p>Просто задайте его в форме ниже и я обязательно Вам отвечу.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 p-3">
+                <form id="message-form" role="form" class="message-form needs-validation" novalidate>
+                    <div class="form-group">
+                        <input id="name" name="name" type="text" class="form-control" placeholder="Ваше Имя"
+                               data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                        <div class="invalid-feedback text-warning">Пожалуйста, укажите как я могу к Вам обратиться в
+                            ответном
+                            письме.
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6 form-group">
+                            <input id="email" name="email" type="email" class="form-control" placeholder="Ваш Email"
+                                   data-rule="email" data-msg="Please enter a valid email" required>
+                            <div class="invalid-feedback text-warning my-4">Пожалуйста, укажите e-mail на который я могу
+                                отправить Вам ответ.
+                            </div>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <input id="phone" name="phone" type="text" class="form-control"
+                                   placeholder="Ваш телефон" data-rule="minlen:10"
+                                   data-msg="Please enter at least 4 chars">
+                            <div class="validate"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input id="subject" name="subject" type="text" class="form-control" placeholder="Тема"
+                               data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                        <div class="validate"></div>
+                    </div>
+                    <div class="form-group">
+                            <textarea id="message" name="message" class="form-control" rows="8" data-rule="required"
+                                      data-msg="Please write something for us" placeholder="Текст сообщения">
+                            </textarea>
+                        <div class="validate"></div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="loading d-none">Loading</div>
+                        <div class="error-message d-none"></div>
+                        <div id="sent-message" class="sent-message"></div>
+                    </div>
+                    <div class="text-center">
+                        <button id="send-message" class="btn btn-violet rounded-pill" type="submit">Отправить
+                            сообщение
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<footer class="footer d-flex align-items-center ">
+    <a href="index.html" class="d-block text-uppercase font-weight-bold text-white text-decoration-none ml-2"><span class="glyphicon glyphicon-arrow-left mx-2"></span>Вернуться на главную</a>
+</footer>
+
+<!--<script src="js/jquery-3.5.1.slim.js"></script>-->
+<script src="js/jquery-3.5.1.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<!--<script src="js/validator.min.js"></script>-->
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
