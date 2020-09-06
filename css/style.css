@@ -729,3 +729,7 @@ a.frontpage-anchor{
 
 .contact-message {
 }
+
+.contact-message .info{
+	color: #e6e7eb;
+}
