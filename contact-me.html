@@ -1,17 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 
 <head>
 
     <!-- Required meta tags -->
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700;subset=cyrillic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="css/font-glyphicons.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description" content="Иван Ковач. Эксперт по автоматизации бизнеса на платформе 1С Предприятие.">
+
     <title>Ковач Иван. Эксперт по автоматизации бизнеса на платформе "1С:Предприятие"</title>
 
 </head>
@@ -22,7 +23,7 @@
 
     <nav class="navbar">
         <a class="navbar-brand" href="index.html">
-            <img class="logo" src="img/logo.png" alt="">
+            <img src="img/logo.svg" width="64" height="56" alt="iK">
             iKovach.ru
         </a>
     </nav>
@@ -54,7 +55,7 @@
                 <form id="message-form" role="form" class="message-form needs-validation" novalidate>
                     <div class="form-group">
                         <input id="name" name="name" type="text" class="form-control" placeholder="Ваше Имя"
-                               data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
+                               aria-label="Имя" required>
                         <div class="invalid-feedback text-warning">Пожалуйста, укажите как я могу к Вам обратиться в
                             ответном
                             письме.
@@ -63,32 +64,25 @@
                     <div class="form-row">
                         <div class="col-md-6 form-group">
                             <input id="email" name="email" type="email" class="form-control" placeholder="Ваш Email"
-                                   data-rule="email" data-msg="Please enter a valid email" required>
+                                   aria-label="E-mail" required>
                             <div class="invalid-feedback text-warning my-4">Пожалуйста, укажите e-mail на который я могу
                                 отправить Вам ответ.
                             </div>
                         </div>
                         <div class="col-md-6 form-group">
                             <input id="phone" name="phone" type="text" class="form-control"
-                                   placeholder="Ваш телефон" data-rule="minlen:10"
-                                   data-msg="Please enter at least 4 chars">
-                            <div class="validate"></div>
+                                   placeholder="Ваш телефон" aria-label="Телефон">
                         </div>
                     </div>
                     <div class="form-group">
                         <input id="subject" name="subject" type="text" class="form-control" placeholder="Тема"
-                               data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
-                        <div class="validate"></div>
+                               aria-label="Тема сообщения">
                     </div>
                     <div class="form-group">
-                            <textarea id="message" name="message" class="form-control" rows="8" data-rule="required"
-                                      data-msg="Please write something for us" placeholder="Текст сообщения">
+                            <textarea id="message" name="message" class="form-control" aria-label="Текст сообщения">
                             </textarea>
-                        <div class="validate"></div>
                     </div>
                     <div class="mb-3">
-                        <div class="loading d-none">Loading</div>
-                        <div class="error-message d-none"></div>
                         <div id="sent-message" class="sent-message"></div>
                     </div>
                     <div class="text-center">
@@ -103,13 +97,24 @@
 
 </section>
 
-<footer class="footer d-flex align-items-center ">
-    <a href="index.html" class="d-block text-uppercase font-weight-bold text-white text-decoration-none ml-2"><span class="glyphicon glyphicon-arrow-left mx-2"></span>Вернуться на главную</a>
+<footer class="footer d-flex align-items-baseline">
+    <a href="index.html" class="d-block text-uppercase font-weight-bold text-white text-decoration-none ml-2">
+        <svg class="mb-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="#fff">
+<g>
+	<g>
+		<path d="M501.504,160.047H234.837V42.714c0-4.309-2.603-8.192-6.592-9.856c-3.989-1.664-8.576-0.747-11.627,2.304L3.115,248.495
+			C1.109,250.501,0,253.21,0,256.047c0,2.837,1.131,5.547,3.115,7.552l213.504,213.419c2.048,2.048,4.779,3.115,7.552,3.115
+			c1.365,0,2.752-0.256,4.075-0.811c3.989-1.664,6.592-5.547,6.592-9.856V352.047h266.667c5.888,0,10.667-4.779,10.667-10.667
+			V170.714C512.171,164.826,507.413,160.047,501.504,160.047z"/>
+	</g>
+</g>
+</svg>
+        Вернуться на главную</a>
 </footer>
 
 <!--<script src="js/jquery-3.5.1.slim.js"></script>-->
 <script src="js/jquery-3.5.1.js"></script>
-<script src="js/bootstrap.bundle.js"></script>
+<!--<script src="js/bootstrap.bundle.js"></script>-->
 <!--<script src="js/validator.min.js"></script>-->
 <script src="js/main.js"></script>
 
