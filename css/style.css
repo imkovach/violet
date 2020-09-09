@@ -231,7 +231,12 @@ a.frontpage-anchor{
 	position: relative;
 	height: 100vh;
 	min-height: 540px;
-	background: url(../img/ivan-bg-min.png) no-repeat center;
+
+	background-image:  url(../img/ivan-bg-min.png);
+	background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%), url(../img/ivan-bg-min.png);
+
+	background-repeat: no-repeat;
+	background-position: center;
 	background-size: cover;
 }
 
@@ -339,6 +344,7 @@ a.frontpage-anchor{
 
 /* =============================daily-tasks============================== */
 .daily-tasks{
+	background-image: radial-gradient(90% 70% at top 0% left 70%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%);
 }
 
 /* ============================crm============================== */
@@ -507,6 +513,10 @@ a.frontpage-anchor{
 @media only screen and (min-width : 1200px) {
 	section{
 		margin: 60px auto;
+	}
+	section:first-of-type{
+		margin-top: 0;
+		padding-top: 60px;
 	}
 	h2, .h2{
 		margin-bottom: 32px;
