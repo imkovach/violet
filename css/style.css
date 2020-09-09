@@ -600,7 +600,6 @@ a.frontpage-anchor{
 }
 
 @media only screen and (max-width : 991px) {
-
 	.navbar-nav{
 		position: relative;
 		z-index: 1;
@@ -613,9 +612,9 @@ a.frontpage-anchor{
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px) {
-	h1{
-		font-size: 2rem;
-	}
+	/*h1{*/
+	/*	font-size: 2rem;*/
+	/*}*/
 	h2, .h2, h3, .h3{
 		font-size: 1.75rem;
 	}
@@ -662,7 +661,7 @@ a.frontpage-anchor{
 	.frontpage-header-buttons .btn{
 		display: block;
 		max-width: 100%;
-		margin: 0 auto 15px;
+		margin: 30px auto 15px;
 	}
 	.daily-tasks .my-5{
 		margin-bottom: 1rem !important;
@@ -687,13 +686,21 @@ a.frontpage-anchor{
 }
 
 @media only screen and (max-width : 380px) {
+	h1, .h1{
+		font-size: 2.5rem;
+	}
+	h3, .h3{
+		font-size: 1.6rem;
+	}
 	.frontpage-header .logo{
 		height: 51px;
 		width: 59px;
 	}
-
 	.frontpage-header h4{
 		font-size: 1.25rem;
+	}
+	.top-management-tools h3{
+		font-size: 1.6rem;
 	}
 }
 
