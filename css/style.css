@@ -26,13 +26,8 @@ body{
 	background-color: #2d2e53;
 }
 
-img{
-	max-width: 100%;
-	height: auto;
-}
-
 section{
-	padding: 30px 0;
+	padding: 2rem 0;
 }
 
 h1{
@@ -109,7 +104,6 @@ h4{
 
 .card-title{
 	background-color: transparent;
-	color: rgba(255,255,255,0.7);
 	color: #e6e7eb;
 }
 
@@ -191,22 +185,6 @@ h4{
 	background-color: #595bff;
 }
 
-.btn-filled-green{
-	/*background: linear-gradient(30deg, #ff5687 50%, #ffb691 100%);*/
-}
-
-.btn-filled-green:hover{
-	background: linear-gradient(30deg, #ff5687 50%, #ffb691 100%);
-}
-
-.btn-filled-pink{
-	background: linear-gradient(30deg, rgba(253,19,146,1), rgba(255,166,146,1) 100%);
-}
-
-.btn-filled-pink:hover{
-	background: #595bff;
-}
-
 .svg-icon{
 	height: 64px;
 	width: 64px;
@@ -216,6 +194,18 @@ h4{
 .svg-icon-big{
 	height: 80px;
 	width: 80px;
+	fill: rgba(255, 255, 255, .7);
+}
+
+.svg-icon-large{
+	height: 128px;
+	width: 128px;
+	fill: rgba(255, 255, 255, .7);
+}
+
+.svg-icon-small{
+	height: 32px;
+	width: 32px;
 	fill: rgba(255, 255, 255, .7);
 }
 
@@ -231,6 +221,9 @@ a.frontpage-anchor{
 	position: relative;
 	height: 100vh;
 	min-height: 540px;
+
+	/*background-image:  url(../img/ivan-bg-min.webp);*/
+	/*background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%), url(../img/ivan-bg-min.webp);*/
 
 	background-image:  url(../img/ivan-bg-min.png);
 	background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%), url(../img/ivan-bg-min.png);
@@ -361,7 +354,7 @@ a.frontpage-anchor{
 	border: solid thin;
 }
 
-.crm .lead-text{
+.lead-text{
 	color: #e6e7eb;
 }
 
@@ -412,16 +405,16 @@ a.frontpage-anchor{
 }
 
 .step_number{
-	font-size: 50px;
+	font-size: 3rem;
 	color: rgba(255, 255, 255, .7);
 	position: absolute;
-	right: 10px;
+	right: .7rem;
 	top: 0;
 }
 
 .step_icon{
 	margin-bottom: 13px;
-	height: 150px;
+	height: 9rem;
 	display: flex;
 	justify-content: center;
 	align-content: flex-end;
@@ -436,11 +429,10 @@ a.frontpage-anchor{
 	color: #e6e7eb;
 	font-weight: 600;
 	line-height: 1.4;
-	margin-bottom: 15px;
+	margin-bottom: 1rem;
 }
 
 .step_text{
-	/*font-size: 13px;*/
 	font-size: .85rem;
 }
 
@@ -469,10 +461,6 @@ a.frontpage-anchor{
 
 /* =============================contacts-form============================== */
 .contacts-form{
-}
-
-.contacts-form label{
-	display: none;
 }
 
 .contacts-form .info{
@@ -511,20 +499,20 @@ a.frontpage-anchor{
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	section{
-		margin: 60px auto;
+		margin: 4rem auto;
 	}
 	section:first-of-type{
 		margin-top: 0;
-		padding-top: 60px;
+		padding-top: 4rem;
 	}
 	h2, .h2{
-		margin-bottom: 32px;
+		margin-bottom: 2rem;
 	}
 	.btn-section{
 		margin-top: 1rem;
 	}
 	.step{
-		margin: 25px;
+		margin: 1.5rem;
 	}
 }
 
@@ -536,6 +524,9 @@ a.frontpage-anchor{
 }
 
 @media only screen and (max-width: 1060px){
+	h3, .h3 {
+		font-size: 1.75rem;
+	}
 	.featured-tasks h3{
 		font-size: 1.2rem;
 		font-weight: 600;
@@ -612,7 +603,7 @@ a.frontpage-anchor{
 	.navbar-nav{
 		position: relative;
 		z-index: 1;
-		padding: 0 15px;
+		padding: 0 1rem;
 	}
 	.frontpage-header{
 		/*background-image: none;*/
@@ -633,7 +624,7 @@ a.frontpage-anchor{
 	}
 	.frontpage-header-text{
 		left: 0;
-		margin: 0 20px;
+		margin: 0 1.25rem;
 		max-width: 80%;
 	}
 	.card-footer{
@@ -649,7 +640,7 @@ a.frontpage-anchor{
 		font-size: 1.75rem;
 		font-weight: 400;
 	}
-	.accounting .arrow{
+	.accounting .flow-arrow{
 		-webkit-transform: rotate(90deg);
 		-moz-transform: rotate(90deg);
 		-ms-transform: rotate(90deg);
@@ -664,14 +655,14 @@ a.frontpage-anchor{
 
 @media only screen and (max-width : 600px) {
 	.frontpage-header-text{
-		top: 90px;
-		margin: 20px auto;
+		top: 6rem;
+		margin: 1.25rem auto;
 		max-width: 100%;
 	}
 	.frontpage-header-buttons .btn{
 		display: block;
 		max-width: 100%;
-		margin: 30px auto 15px;
+		margin: 2rem auto 1rem;
 	}
 	.daily-tasks .my-5{
 		margin-bottom: 1rem !important;
@@ -681,6 +672,9 @@ a.frontpage-anchor{
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	.frontpage-header .navbar-brand{
+		font-size: 1.5rem;
+	}
+	.frontpage-header h2 {
 		font-size: 1.5rem;
 	}
 	.frontpage-header-text{
@@ -742,7 +736,4 @@ a.frontpage-anchor{
 	height: 4rem;
 	font-size: 1rem;
 	position:relative;
-}
-
-.contact-message {
 }
