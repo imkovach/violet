@@ -225,8 +225,8 @@ a.frontpage-anchor{
 	/*background-image:  url(../img/ivan-bg-min.webp);*/
 	/*background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%), url(../img/ivan-bg-min.webp);*/
 
-	background-image:  url(../img/ivan-suit-bg-min.png);
-	background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%), url(../img/ivan-suit-bg-min.png);
+	background-image:  url(../img/ivan-bg-min.png);
+	background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%), url(../img/ivan-bg-min.png);
 
 	background-repeat: no-repeat;
 	background-position: center;
@@ -239,6 +239,10 @@ a.frontpage-anchor{
 	padding: 0 !important;
 	height: 3.25rem;
 	width: 4.25rem;
+}
+
+.frontpage-header .navbar{
+	justify-content: flex-start;
 }
 
 .frontpage-header .navbar-brand{
@@ -716,6 +720,10 @@ a.frontpage-anchor{
 	height: 5rem;
 	transition: background 1s;
 	opacity: .85;
+}
+
+.header .navbar{
+	justify-content: flex-start;
 }
 
 .header .navbar-brand{
