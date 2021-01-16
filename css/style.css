@@ -229,7 +229,7 @@ a.frontpage-anchor{
 	background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%), url(../img/ivan-bg-min.png);
 
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: right top;
 	background-size: cover;
 }
 
@@ -552,18 +552,7 @@ a.frontpage-anchor{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	.frontpage-header{
-		height: unset;
-		min-height: unset;
-	}
-	.top-management-tools h3{
-		font-size: 2rem;
-		font-weight: 400;
-	}
-	.steps {
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
+
 }
 
 @media (max-width: 991.98px) {
@@ -612,18 +601,33 @@ a.frontpage-anchor{
 	.offcanvas-open {
 		overflow: hidden;
 	}
-}
 
-@media only screen and (max-width : 991px) {
 	.navbar-nav{
 		position: relative;
 		z-index: 1;
 		padding: 0 1rem;
 	}
+
 	.frontpage-header{
+		height: unset;
+		min-height: unset;
 		/*background-image: none;*/
 		background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%);
 	}
+
+	.top-management-tools h3{
+		font-size: 2rem;
+		font-weight: 400;
+	}
+
+	.steps {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+}
+
+@media only screen and (max-width : 991px) {
 }
 
 /* Small Devices, Tablets */
