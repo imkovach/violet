@@ -75,26 +75,44 @@
         // let subject = $('#subject').val();
         // let message = $('#message').val();
 
-        $.ajax({
-            type: "POST",
-            url: "php/send-message.php",
-            // data: "name=" + name + "&email=" + email + "&message=" + message,
-            data: $('#message-form').serialize(),
-            success : function(text){
-                let messageForm = $("#message-form");
-                if (text === "success"){
+        const messageForm = $("#message-form");
+        console.log(messageForm);
+
+        // $.ajax({
+        //     type: "POST",
+        //     url: "php/send-message.php",
+        //     // data: "name=" + name + "&email=" + email + "&message=" + message,
+        //     data: messageForm.serialize(),
+        //     success : function(text){
+        //         let messageForm = $("#message-form");
+        //         if (text === "success"){
+        //             messageForm[0].reset();
+        //             messageForm.removeClass('was-validated').addClass('needs-validation');
+        //             showSubmitMessage(true, "Ваше сообщение успешно отправлено!")
+        //             // let popup = $('#sent-message');
+        //             // let msgClasses = "h3 text-center animated text-info";
+        //             // popup.addClass(msgClasses).text("Ваше сообщение успешно отправлено!").fadeIn(200).delay(2000).fadeOut(1000);
+        //         } else {
+        //             shakeForm();
+        //             //showSubmitMessage(false, text);
+        //         }
+        //     }
+        // });
+
+        axios.post('php/send-message.php', $('#message-form').serialize())
+            .then(response => {
+                if (response.text === "success") {
                     messageForm[0].reset();
                     messageForm.removeClass('was-validated').addClass('needs-validation');
                     showSubmitMessage(true, "Ваше сообщение успешно отправлено!")
-                    // let popup = $('#sent-message');
-                    // let msgClasses = "h3 text-center animated text-info";
+                    // const popup = $('#sent-message');
+                    // const msgClasses = "h3 text-center animated text-info";
                     // popup.addClass(msgClasses).text("Ваше сообщение успешно отправлено!").fadeIn(200).delay(2000).fadeOut(1000);
                 } else {
                     shakeForm();
                     //showSubmitMessage(false, text);
                 }
-            }
-        });
+            });
     }
 
     function shakeForm(){

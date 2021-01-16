@@ -297,8 +297,8 @@ a.frontpage-anchor{
 	text-align: unset;
 }
 
-.fronpage-header-content {
-	padding-top: 4rem;
+.frontpage-header-content {
+	padding-top: 2rem;
 }
 
 .frontpage-header-text{
@@ -311,6 +311,7 @@ a.frontpage-anchor{
 }
 
 .frontpage-header .competencies{
+	/*max-width: 652px;*/
 }
 
 .frontpage-header .competencies li{
@@ -339,13 +340,8 @@ a.frontpage-anchor{
 .frontpage-header-buttons .btn{
 
 	min-height: 60px;
-
 	margin-top: 30px;
-
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding: 1rem 40px;
 
 	transition: all .5s;
 }
@@ -556,6 +552,10 @@ a.frontpage-anchor{
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.frontpage-header{
+		height: unset;
+		min-height: unset;
+	}
 	.top-management-tools h3{
 		font-size: 2rem;
 		font-weight: 400;
@@ -640,15 +640,15 @@ a.frontpage-anchor{
 	.frontpage-header {
 		height: unset;
 	}
-	.frontpage-header-text{
-		left: 0;
-		margin: 0 1.25rem;
-		max-width: 80%;
-	}
 	.card-footer{
 		border-top: 0;
 		border-bottom: 1px solid;
 		border-image: linear-gradient(90deg, rgba(153,155,172,.2) 0%, rgba(192,192,203,.7) 50%, rgba(153,155,172,.2) 100%) 1;
+	}
+	.frontpage-header-text{
+		left: 0;
+		margin: 0 1.25rem;
+		max-width: 80%;
 	}
 	.top-management-tools h3{
 		font-size: 1.75rem;
