@@ -229,7 +229,7 @@ a.frontpage-anchor{
 	background-image: radial-gradient(at 70% 100%, rgba(135, 115, 173, .2) -40%, rgba(45, 46, 83, .1) 50%), url(../img/ivan-bg-min.png);
 
 	background-repeat: no-repeat;
-	background-position: right top;
+	background-position: center;
 	background-size: cover;
 }
 
